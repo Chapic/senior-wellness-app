@@ -1,18 +1,17 @@
-import React from 'react';
-import { Outlet } from 'react-router-dom';
-import Header from './Components/Header';
-import Footer from './Components/Footer';
+import { Routes, Route } from 'react-router-dom';
+import Layout from './Components/Layout';
+import Home from './Pages/Home';
+import About from './Pages/About';
 
-const App = () => {
+function App() {
   return (
-    <>
-      <Header />
-      <main>
-        <Outlet />
-      </main>
-      <Footer />
-    </>
+    <Layout>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </Layout>
   );
-};
+}
 
 export default App;
