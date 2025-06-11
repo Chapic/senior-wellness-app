@@ -3,12 +3,23 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
-    <header style={{ padding: '1rem', backgroundColor: '#f0f0f0', borderBottom: '1px solid #ccc' }}>
-      <nav style={{ display: 'flex', gap: '1rem' }}>
-        <Link to="/">🏠 Inicio</Link>
-        <Link to="/about">ℹ️ Acerca de</Link>
-        <Link to="/rutinas">🧘 Rutinas</Link>
-      </nav>
+    <header style={{
+      background: '#f5f5f5',
+      padding: '1rem',
+      display: 'flex',
+      justifyContent: 'center',
+      gap: '2rem',
+      borderBottom: '2px solid #ddd'
+    }}>
+      <Link to="/" style={{ textDecoration: 'none', color: '#333', fontWeight: 'bold' }}>
+        Inicio
+      </Link>
+      <Link to="/rutinas" style={{ textDecoration: 'none', color: '#333', fontWeight: 'bold' }}>
+        Rutinas
+      </Link>
+      <Link to="/about" style={{ textDecoration: 'none', color: '#333', fontWeight: 'bold' }}>
+        Acerca de
+      </Link>
     </header>
   );
 };
