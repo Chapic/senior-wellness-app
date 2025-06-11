@@ -2,8 +2,8 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer style={{ padding: '1rem', backgroundColor: '#f0f0f0', marginTop: '2rem', textAlign: 'center' }}>
-      <p>&copy; {new Date().getFullYear()} Senior Wellness App</p>
+    <footer style={{ background: '#eee', padding: '1rem', textAlign: 'center' }}>
+      <p>© 2025 Senior Wellness App</p>
     </footer>
   );
 };
