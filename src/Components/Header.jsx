@@ -11,15 +11,9 @@ const Header = () => {
       gap: '2rem',
       borderBottom: '2px solid #ddd'
     }}>
-      <Link to="/" style={{ textDecoration: 'none', color: '#333', fontWeight: 'bold' }}>
-        Inicio
-      </Link>
-      <Link to="/rutinas" style={{ textDecoration: 'none', color: '#333', fontWeight: 'bold' }}>
-        Rutinas
-      </Link>
-      <Link to="/about" style={{ textDecoration: 'none', color: '#333', fontWeight: 'bold' }}>
-        Acerca de
-      </Link>
+      <Link to="/" style={{ textDecoration: 'none', color: '#333', fontWeight: 'bold' }}>Inicio</Link>
+      <Link to="/rutinas" style={{ textDecoration: 'none', color: '#333', fontWeight: 'bold' }}>Rutinas</Link>
+      <Link to="/about" style={{ textDecoration: 'none', color: '#333', fontWeight: 'bold' }}>Acerca de</Link>
     </header>
   );
 };
