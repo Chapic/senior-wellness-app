@@ -1,8 +1,12 @@
-export default function Home() {
+import React from 'react';
+
+const Home = () => {
   return (
-    <div style={{ padding: '20px' }}>
-      <h1>🏡 Home</h1>
-      <p>Welcome to the Senior Wellness App. Start your journey to better health!</p>
+    <div>
+      <h1>Welcome to the 7-Day Wellness Routine</h1>
+      <p>This program is designed for seniors to gently improve balance, strength, and flexibility with daily 10-minute sessions.</p>
     </div>
   );
-}
+};
+
+export default Home;
