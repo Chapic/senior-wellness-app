@@ -9,23 +9,43 @@ const App = () => {
   const [contador, setContador] = useState(0);
 
   return (
-    <Layout>
-      <div style={{ textAlign: 'center', padding: '1rem' }}>
-        <h3>✅ Ejercicios completados: {contador}</h3>
-        <button
-          onClick={() => setContador(contador + 1)}
-          style={{ padding: '0.5rem 1rem', marginBottom: '1rem' }}
-        >
-          +1 Ejercicio
-        </button>
-      </div>
-
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/rutinas" element={<Rutinas />} />
-      </Routes>
-    </Layout>
+    <Routes>
+      <Route
+        path="/"
+        element={
+          <Layout>
+            <Home />
+          </Layout>
+        }
+      />
+      <Route
+        path="/about"
+        element={
+          <Layout>
+            <About />
+          </Layout>
+        }
+      />
+      <Route
+        path="/rutinas"
+        element={
+          <Layout>
+            <>
+              <div style={{ textAlign: 'center', padding: '1rem' }}>
+                <h3>✅ Ejercicios completados: {contador}</h3>
+                <button
+                  onClick={() => setContador(contador + 1)}
+                  style={{ padding: '0.5rem 1rem', marginBottom: '1rem' }}
+                >
+                  +1 Ejercicio
+                </button>
+              </div>
+              <Rutinas />
+            </>
+          </Layout>
+        }
+      />
+    </Routes>
   );
 };
 
