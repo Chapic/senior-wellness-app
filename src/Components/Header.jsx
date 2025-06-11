@@ -1,16 +1,15 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
-const Header = () => {
+function Header() {
   return (
-    <header style={{ padding: "1rem", backgroundColor: "#f0f0f0" }}>
+    <header style={{ backgroundColor: '#eee', padding: '10px' }}>
       <nav>
-        <Link to="/" style={{ marginRight: "1rem" }}>Inicio</Link>
-        <Link to="/home" style={{ marginRight: "1rem" }}>Home</Link>
-        <Link to="/about">About</Link>
+        <Link to="/" style={{ marginRight: '10px' }}>🏠 Inicio</Link>
+        <Link to="/about" style={{ marginRight: '10px' }}>ℹ️ Acerca de</Link>
+        <Link to="/rutinas">🏃 Rutinas</Link> {/* NUEVO ENLACE */}
       </nav>
     </header>
   );
-};
+}
 
 export default Header;
