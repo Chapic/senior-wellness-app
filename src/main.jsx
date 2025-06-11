@@ -6,13 +6,11 @@ import Home from './Home.jsx';
 import About from './About.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
-    </BrowserRouter>
-  </React.StrictMode>
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<App />} />
+      <Route path="/home" element={<Home />} />
+      <Route path="/about" element={<About />} />
+    </Routes>
+  </BrowserRouter>
 );
